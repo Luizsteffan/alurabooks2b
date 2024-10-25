@@ -55,40 +55,39 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
-      
-<div class="swiper">
-
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro Sobre ApacheKafka da Allura Books"></div>
-      <div class="swiper-slide"><img src="img/Javascript.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/Acessibilidade.png" alt=""> </div>
-      <div class="swiper-slide"><img src="img/Angular.png" alt=""> </div>
-      <div class="swiper-slide"> <img src="img/Arquitetura.png" alt=""> </div>
-      <div class="swiper-slide"><img src="img/Favoritos.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/Construct2.png" alt=""></div>
-
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre apache Kafka da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre Javascript da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro sobre Front-End da AluraBooks"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+            <div class="card">
+                <div class="card-descricao">
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Talvez você se interesse por...</h3>
+                        <h2 class="descricaotitulo-livro">Angular e Firebas</h2>
+                        <p class="descricao-texto">Construção de aplicação integrada ao goole</p>
+                    </div>
+                    <img src="img/Angular.png" alt="" class="descricao-imagem">
+                </div>
+            </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>const swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 100,
-      });
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el:'.swiper-pagination',
+            type: 'bullets',
+        },
+    });
     </script>
-    
-    
 </body>
 
 </html>
